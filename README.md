@@ -84,9 +84,8 @@ bash eval/run_eval.sh
 
 ## 文档
 
-1. 快速上手： [docs/quickstart_feishu.md](docs/quickstart_feishu.md)
-2. 路演模板： [docs/feishu_cua_result_template.md](docs/feishu_cua_result_template.md)
-3. 提交清单： [docs/submission_checklist.md](docs/submission_checklist.md)
+快速上手： [docs/quickstart_feishu.md](docs/quickstart_feishu.md)
+
 
 ## Citation
 
