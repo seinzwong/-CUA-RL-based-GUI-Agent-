@@ -1,0 +1,850 @@
+[
+  {
+    "id": 0,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": false,
+      "high_risk_write_guarded": true
+    }
+  },
+  {
+    "id": 1,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: REVISE_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=rollback\nDetail=REVISE_FORM accepted. Workflow returned to form editing stage for safer correction."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Form revised and validated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Updated draft generated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": true,
+      "high_risk_write_guarded": true
+    }
+  },
+  {
+    "id": 2,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": false,
+      "high_risk_write_guarded": true
+    }
+  },
+  {
+    "id": 3,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: REVISE_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=rollback\nDetail=REVISE_FORM accepted. Workflow returned to form editing stage for safer correction."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Form revised and validated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Updated draft generated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": true,
+      "high_risk_write_guarded": true
+    }
+  },
+  {
+    "id": 4,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": false,
+      "high_risk_write_guarded": true
+    }
+  },
+  {
+    "id": 5,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: REVISE_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=rollback\nDetail=REVISE_FORM accepted. Workflow returned to form editing stage for safer correction."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Form revised and validated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Updated draft generated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": true,
+      "high_risk_write_guarded": true
+    }
+  },
+  {
+    "id": 6,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": false,
+      "high_risk_write_guarded": true
+    }
+  },
+  {
+    "id": 7,
+    "task_id": "trip-train-001",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a Feishu desktop CUA agent for travel approval workflows. Follow task requirements and output exactly one action each turn using format: Action: <ACTION_NAME>."
+      },
+      {
+        "from": "gpt",
+        "value": "OK"
+      },
+      {
+        "from": "human",
+        "value": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: OPEN_TRAVEL_CENTER"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=1/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: PARSE_TRAVEL_REQUEST"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=2/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SEARCH_CANDIDATE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=3/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: COMPARE_OPTIONS"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=4/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=5/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Action accepted. Progress=6/8."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: REVISE_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=rollback\nDetail=REVISE_FORM accepted. Workflow returned to form editing stage for safer correction."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: FILL_APPROVAL_FORM"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Form revised and validated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: GENERATE_APPROVAL_DRAFT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=in_progress\nDetail=Updated draft generated."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (1/2). Submit is unlocked only after two confirmations."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: CONFIRM_SUBMIT"
+      },
+      {
+        "from": "human",
+        "value": "Observation:\nDesktop=Feishu\nModule=TravelApproval\nRequestID=REQ-TRAIN-001\nDestination=Hangzhou\nBudget=<= 2500 CNY\nState=pre_submit_confirmation\nDetail=Confirmation captured (2/2). Submit is unlocked."
+      },
+      {
+        "from": "gpt",
+        "value": "Action: SUBMIT_APPROVAL"
+      }
+    ],
+    "reward": 1.0,
+    "source": "feishu_seed",
+    "true_reward": 1.0,
+    "safety_label": {
+      "double_confirm_used": true,
+      "rollback_used": true,
+      "high_risk_write_guarded": true
+    }
+  }
+]

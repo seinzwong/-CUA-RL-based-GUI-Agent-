@@ -1,0 +1,12 @@
+{
+    "task": {
+        "task_class": "FeishuTravelTask"
+    },
+    "env_config": {
+        "env_class": "FeishuDesktopEnvMock",
+        "instruction_path": "eval_agent/prompt/instructions/feishu_travel_inst.txt",
+        "icl_path": "eval_agent/prompt/icl_examples/feishu_travel_icl.json",
+        "icl_format": "conversation",
+        "max_steps": 12
+    }
+}

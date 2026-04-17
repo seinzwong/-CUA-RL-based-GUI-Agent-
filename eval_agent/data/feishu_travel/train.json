@@ -1,0 +1,21 @@
+[
+  {
+    "task_id": "trip-train-001",
+    "task_text": "Task: Parse employee travel requirement and create approval draft in Feishu desktop with reliable action verification.",
+    "context": {
+      "request_id": "REQ-TRAIN-001",
+      "destination": "Hangzhou",
+      "budget": "<= 2500 CNY"
+    },
+    "expected_actions": [
+      "OPEN_TRAVEL_CENTER",
+      "PARSE_TRAVEL_REQUEST",
+      "SEARCH_CANDIDATE_OPTIONS",
+      "COMPARE_OPTIONS",
+      "FILL_APPROVAL_FORM",
+      "GENERATE_APPROVAL_DRAFT",
+      "CONFIRM_SUBMIT",
+      "SUBMIT_APPROVAL"
+    ]
+  }
+]

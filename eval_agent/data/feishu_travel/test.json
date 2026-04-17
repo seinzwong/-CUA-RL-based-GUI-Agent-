@@ -1,0 +1,40 @@
+[
+  {
+    "task_id": "trip-001",
+    "task_text": "Task: Arrange a business trip to Shanghai next week. Use Feishu desktop to parse needs, search options, compare plans, fill the approval form, generate draft, and submit after confirmation.",
+    "context": {
+      "request_id": "REQ-TRAVEL-001",
+      "destination": "Shanghai",
+      "budget": "<= 3000 CNY"
+    },
+    "expected_actions": [
+      "OPEN_TRAVEL_CENTER",
+      "PARSE_TRAVEL_REQUEST",
+      "SEARCH_CANDIDATE_OPTIONS",
+      "COMPARE_OPTIONS",
+      "FILL_APPROVAL_FORM",
+      "GENERATE_APPROVAL_DRAFT",
+      "CONFIRM_SUBMIT",
+      "SUBMIT_APPROVAL"
+    ]
+  },
+  {
+    "task_id": "trip-002",
+    "task_text": "Task: Prepare a travel approval draft for a Chengdu trip and submit in Feishu desktop under budget constraints.",
+    "context": {
+      "request_id": "REQ-TRAVEL-002",
+      "destination": "Chengdu",
+      "budget": "<= 2800 CNY"
+    },
+    "expected_actions": [
+      "OPEN_TRAVEL_CENTER",
+      "PARSE_TRAVEL_REQUEST",
+      "SEARCH_CANDIDATE_OPTIONS",
+      "COMPARE_OPTIONS",
+      "FILL_APPROVAL_FORM",
+      "GENERATE_APPROVAL_DRAFT",
+      "CONFIRM_SUBMIT",
+      "SUBMIT_APPROVAL"
+    ]
+  }
+]
